@@ -23,4 +23,6 @@ jobs:
         uses: nanasess/setup-chromedriver@master
       - name: Install behave
         run: pip install behave behave-webdriver
+      - name: Run Behave
+        run: behave
 
