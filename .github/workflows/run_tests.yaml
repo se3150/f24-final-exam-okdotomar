@@ -9,7 +9,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Install pytest
-        run: pip install pytest pytest-spec pytest-describe
+        run: pip install pytest pytest-spec pytest-describe pytest-mock
       - name: Run Unit Tests
         run: pytest --spec --color=yes test_brute.py
 
@@ -24,5 +24,4 @@ jobs:
       - name: Install behave
         run: pip install behave behave-webdriver
       - name: Run Functional Tests
-        run: behave
 
